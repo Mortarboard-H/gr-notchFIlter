@@ -7,5 +7,6 @@
 #
 
 install(FILES
-    notchFilter_adaptiveNotch.block.yml DESTINATION share/gnuradio/grc/blocks
+    notchFilter_adaptiveNotch.block.yml
+    notchFilter_iirNotch.block.yml DESTINATION share/gnuradio/grc/blocks
 )

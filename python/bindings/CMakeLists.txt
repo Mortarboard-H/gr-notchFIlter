@@ -29,7 +29,8 @@ include(GrPybind)
 ########################################################################
 
 list(APPEND notchFilter_python_files
-    adaptiveNotch_python.cc python_bindings.cc)
+    adaptiveNotch_python.cc
+    iirNotch_python.cc python_bindings.cc)
 
 GR_PYBIND_MAKE_OOT(notchFilter
    ../..

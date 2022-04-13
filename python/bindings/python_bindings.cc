@@ -22,6 +22,7 @@ namespace py = pybind11;
 /**************************************/
 // BINDING_FUNCTION_PROTOTYPES(
     void bind_adaptiveNotch(py::module& m);
+    void bind_iirNotch(py::module& m);
 // ) END BINDING_FUNCTION_PROTOTYPES
 
 
@@ -51,5 +52,6 @@ PYBIND11_MODULE(notchFilter_python, m)
     /**************************************/
     // BINDING_FUNCTION_CALLS(
     bind_adaptiveNotch(m);
+    bind_iirNotch(m);
     // ) END BINDING_FUNCTION_CALLS
 }

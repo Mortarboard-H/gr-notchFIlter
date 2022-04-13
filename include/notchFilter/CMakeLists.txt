@@ -11,5 +11,6 @@
 ########################################################################
 install(FILES
     api.h
-    adaptiveNotch.h DESTINATION include/notchFilter
+    adaptiveNotch.h
+    iirNotch.h DESTINATION include/notchFilter
 )

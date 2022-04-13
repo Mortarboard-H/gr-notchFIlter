@@ -13,6 +13,7 @@ include(GrPlatform) #define LIB_SUFFIX
 
 list(APPEND notchFilter_sources
     adaptiveNotch_impl.cc
+    iirNotch_impl.cc
 )
 
 set(notchFilter_sources "${notchFilter_sources}" PARENT_SCOPE)
