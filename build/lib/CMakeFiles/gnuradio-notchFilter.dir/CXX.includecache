@@ -1,0 +1,28 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/notchFilter/adaptiveNotch.h
+gnuradio/sync_block.h
+-
+notchFilter/api.h
+-
+
+../include/notchFilter/api.h
+gnuradio/attributes.h
+-
+
+/home/ht/Desktop/gr-notchFilter/lib/adaptiveNotch_impl.cc
+adaptiveNotch_impl.h
+/home/ht/Desktop/gr-notchFilter/lib/adaptiveNotch_impl.h
+gnuradio/io_signature.h
+-
+
+/home/ht/Desktop/gr-notchFilter/lib/adaptiveNotch_impl.h
+notchFilter/adaptiveNotch.h
+-
+
