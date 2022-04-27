@@ -55,6 +55,7 @@ w1=0.01e\*f1
 w2=0.01e\*f2
 
 **iirnotch**
+
 An iir notch filter. transfer function is 
 
 (s\*s+wc\*wc)\(s\*s+wc\*wc+wb\*s)
