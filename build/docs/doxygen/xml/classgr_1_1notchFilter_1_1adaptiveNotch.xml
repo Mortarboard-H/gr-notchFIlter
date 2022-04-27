@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1notchFilter_1_1adaptiveNotch" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::notchFilter::adaptiveNotch</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1notchFilter_1_1adaptiveNotch__impl" prot="public" virt="non-virtual">gr::notchFilter::adaptiveNotch_impl</derivedcompoundref>
+    <includes refid="adaptiveNotch_8h" local="no">adaptiveNotch.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1notchFilter_1_1adaptiveNotch_1a093e6a3d274d7cfe8012c551d23dacb8" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classgr_1_1notchFilter_1_1adaptiveNotch" kindref="compound">adaptiveNotch</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;adaptiveNotch&gt; gr::notchFilter::adaptiveNotch::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ht/gr-notchFIlter/include/notchFilter/adaptiveNotch.h" line="25" column="29" bodyfile="/home/ht/gr-notchFIlter/include/notchFilter/adaptiveNotch.h" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1notchFilter_1_1adaptiveNotch_1a06a60b89480895512b3a8ac72d4d1a1e" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1notchFilter_1_1adaptiveNotch_1a093e6a3d274d7cfe8012c551d23dacb8" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::notchFilter::adaptiveNotch::make</definition>
+        <argsstring>(double sampRate, double targetFreq)</argsstring>
+        <name>make</name>
+        <param>
+          <type>double</type>
+          <declname>sampRate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>targetFreq</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1notchFilter_1_1adaptiveNotch" kindref="compound">notchFilter::adaptiveNotch</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1notchFilter_1_1adaptiveNotch" kindref="compound">notchFilter::adaptiveNotch</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1notchFilter_1_1adaptiveNotch_1a06a60b89480895512b3a8ac72d4d1a1e" kindref="member">notchFilter::adaptiveNotch::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ht/gr-notchFIlter/include/notchFilter/adaptiveNotch.h" line="35" column="17"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1notchFilter_1_1adaptiveNotch_1addc9d9014b2922cc7584385963176415" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::notchFilter::adaptiveNotch::update_sample_rate</definition>
+        <argsstring>(double rate)=0</argsstring>
+        <name>update_sample_rate</name>
+        <reimplementedby refid="classgr_1_1notchFilter_1_1adaptiveNotch__impl_1a00050504202afe50347bf0b42f2c3d61">update_sample_rate</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>update sample rate </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ht/gr-notchFIlter/include/notchFilter/adaptiveNotch.h" line="39" column="18"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1notchFilter_1_1adaptiveNotch_1ab051d162976090fd9010bec4567e3114" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::notchFilter::adaptiveNotch::set_target_freq</definition>
+        <argsstring>(double rate)=0</argsstring>
+        <name>set_target_freq</name>
+        <reimplementedby refid="classgr_1_1notchFilter_1_1adaptiveNotch__impl_1a0a179877c470575e403530927966ade7">set_target_freq</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>rate</declname>
+        </param>
+        <briefdescription>
+<para>update target frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ht/gr-notchFIlter/include/notchFilter/adaptiveNotch.h" line="44" column="18"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="2">
+        <label>sync_block</label>
+      </node>
+      <node id="3">
+        <label>gr::notchFilter::adaptiveNotch_impl</label>
+        <link refid="classgr_1_1notchFilter_1_1adaptiveNotch__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>gr::notchFilter::adaptiveNotch</label>
+        <link refid="classgr_1_1notchFilter_1_1adaptiveNotch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="2">
+        <label>sync_block</label>
+      </node>
+      <node id="1">
+        <label>gr::notchFilter::adaptiveNotch</label>
+        <link refid="classgr_1_1notchFilter_1_1adaptiveNotch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ht/gr-notchFIlter/include/notchFilter/adaptiveNotch.h" line="23" column="1" bodyfile="/home/ht/gr-notchFIlter/include/notchFilter/adaptiveNotch.h" bodystart="22" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classgr_1_1notchFilter_1_1adaptiveNotch_1a06a60b89480895512b3a8ac72d4d1a1e" prot="public" virt="non-virtual"><scope>gr::notchFilter::adaptiveNotch</scope><name>make</name></member>
+      <member refid="classgr_1_1notchFilter_1_1adaptiveNotch_1ab051d162976090fd9010bec4567e3114" prot="public" virt="pure-virtual"><scope>gr::notchFilter::adaptiveNotch</scope><name>set_target_freq</name></member>
+      <member refid="classgr_1_1notchFilter_1_1adaptiveNotch_1a093e6a3d274d7cfe8012c551d23dacb8" prot="public" virt="non-virtual"><scope>gr::notchFilter::adaptiveNotch</scope><name>sptr</name></member>
+      <member refid="classgr_1_1notchFilter_1_1adaptiveNotch_1addc9d9014b2922cc7584385963176415" prot="public" virt="pure-virtual"><scope>gr::notchFilter::adaptiveNotch</scope><name>update_sample_rate</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
