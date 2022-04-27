@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="adaptiveNotch_8h" kind="file" language="C++">
+    <compoundname>adaptiveNotch.h</compoundname>
+    <includes local="no">gnuradio/sync_block.h</includes>
+    <includes refid="api_8h" local="no">notchFilter/api.h</includes>
+    <includedby refid="adaptiveNotch__impl_8h" local="no">adaptiveNotch_impl.h</includedby>
+    <incdepgraph>
+      <node id="2">
+        <label>gnuradio/sync_block.h</label>
+      </node>
+      <node id="4">
+        <label>gnuradio/attributes.h</label>
+      </node>
+      <node id="3">
+        <label>notchFilter/api.h</label>
+        <link refid="api_8h"/>
+        <childnode refid="4" relation="include">
+        </childnode>
+      </node>
+      <node id="1">
+        <label>adaptiveNotch.h</label>
+        <link refid="adaptiveNotch_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+        <childnode refid="3" relation="include">
+        </childnode>
+      </node>
+    </incdepgraph>
+    <invincdepgraph>
+      <node id="2">
+        <label>adaptiveNotch_impl.h</label>
+        <link refid="adaptiveNotch__impl_8h"/>
+      </node>
+      <node id="1">
+        <label>adaptiveNotch.h</label>
+        <link refid="adaptiveNotch_8h"/>
+        <childnode refid="2" relation="include">
+        </childnode>
+      </node>
+    </invincdepgraph>
+    <innerclass refid="classgr_1_1notchFilter_1_1adaptiveNotch" prot="public">gr::notchFilter::adaptiveNotch</innerclass>
+    <innernamespace refid="namespacegr">gr</innernamespace>
+    <innernamespace refid="namespacegr_1_1notchFilter">gr::notchFilter</innernamespace>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="/home/ht/gr-notchFIlter/include/notchFilter/adaptiveNotch.h"/>
+  </compounddef>
+</doxygen>

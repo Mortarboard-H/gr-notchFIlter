@@ -31,7 +31,17 @@ public:
    * class. notchFilter::iirNotch::make is the public interface for
    * creating new instances.
    */
-  static sptr make(double sampRate, double targetFreq, double depth);
+  static sptr make(double sampRate, double targetFreq, double width);
+
+  /*!
+   * \brief call back function to update centre frequency
+   */
+  virtual void set_wc(double wc)=0;
+
+  /*!
+   * \brief call back function to update band frequency
+   */
+  virtual void set_wb(double wb)=0;
 };
 
 } // namespace notchFilter

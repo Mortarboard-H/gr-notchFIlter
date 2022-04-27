@@ -15,15 +15,24 @@ namespace notchFilter {
 
 class iirNotch_impl : public iirNotch {
 private:
-  // Nothing to declare in this block.
+  //coefficient of input sample
+  double a0,a1,a2;
+  //coefficient of delayed output sample
+  double b1,b2;
+  double wc;
+  double wb;
+  double sampleRate;
 
 public:
-  iirNotch_impl(double sampRate, double targetFreq, double depth);
+  iirNotch_impl(double sampRate, double targetFreq, double width);
   ~iirNotch_impl();
 
   // Where all the action really happens
   int work(int noutput_items, gr_vector_const_void_star &input_items,
            gr_vector_void_star &output_items);
+  
+  void set_wc(double wc) override;
+  void set_wb(double wb) override;
 };
 
 } // namespace notchFilter

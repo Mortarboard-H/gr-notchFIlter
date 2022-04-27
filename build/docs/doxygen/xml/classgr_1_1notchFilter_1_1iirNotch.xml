@@ -1,0 +1,133 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.8.17">
+  <compounddef id="classgr_1_1notchFilter_1_1iirNotch" kind="class" language="C++" prot="public" abstract="yes">
+    <compoundname>gr::notchFilter::iirNotch</compoundname>
+    <basecompoundref prot="public" virt="virtual">sync_block</basecompoundref>
+    <derivedcompoundref refid="classgr_1_1notchFilter_1_1iirNotch__impl" prot="public" virt="non-virtual">gr::notchFilter::iirNotch_impl</derivedcompoundref>
+    <includes refid="iirNotch_8h" local="no">iirNotch.h</includes>
+      <sectiondef kind="public-type">
+      <memberdef kind="typedef" id="classgr_1_1notchFilter_1_1iirNotch_1aae6ab0d1571c968aafb6866ca57d6129" prot="public" static="no">
+        <type>std::shared_ptr&lt; <ref refid="classgr_1_1notchFilter_1_1iirNotch" kindref="compound">iirNotch</ref> &gt;</type>
+        <definition>typedef std::shared_ptr&lt;iirNotch&gt; gr::notchFilter::iirNotch::sptr</definition>
+        <argsstring></argsstring>
+        <name>sptr</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ht/gr-notchFIlter/include/notchFilter/iirNotch.h" line="24" column="27" bodyfile="/home/ht/gr-notchFIlter/include/notchFilter/iirNotch.h" bodystart="24" bodyend="-1"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-static-func">
+      <memberdef kind="function" id="classgr_1_1notchFilter_1_1iirNotch_1a8df8bb20644926560469d99ec47af6fe" prot="public" static="yes" const="no" explicit="no" inline="no" virt="non-virtual">
+        <type><ref refid="classgr_1_1notchFilter_1_1iirNotch_1aae6ab0d1571c968aafb6866ca57d6129" kindref="member">sptr</ref></type>
+        <definition>static sptr gr::notchFilter::iirNotch::make</definition>
+        <argsstring>(double sampRate, double targetFreq, double width)</argsstring>
+        <name>make</name>
+        <param>
+          <type>double</type>
+          <declname>sampRate</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>targetFreq</declname>
+        </param>
+        <param>
+          <type>double</type>
+          <declname>width</declname>
+        </param>
+        <briefdescription>
+<para>Return a shared_ptr to a new instance of <ref refid="classgr_1_1notchFilter_1_1iirNotch" kindref="compound">notchFilter::iirNotch</ref>. </para>
+        </briefdescription>
+        <detaileddescription>
+<para>To avoid accidental use of raw pointers, <ref refid="classgr_1_1notchFilter_1_1iirNotch" kindref="compound">notchFilter::iirNotch</ref>&apos;s constructor is in a private implementation class. <ref refid="classgr_1_1notchFilter_1_1iirNotch_1a8df8bb20644926560469d99ec47af6fe" kindref="member">notchFilter::iirNotch::make</ref> is the public interface for creating new instances. </para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ht/gr-notchFIlter/include/notchFilter/iirNotch.h" line="34" column="15"/>
+      </memberdef>
+      </sectiondef>
+      <sectiondef kind="public-func">
+      <memberdef kind="function" id="classgr_1_1notchFilter_1_1iirNotch_1ae31e7de2846f60303228cdef5d0d0eb4" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::notchFilter::iirNotch::set_wc</definition>
+        <argsstring>(double wc)=0</argsstring>
+        <name>set_wc</name>
+        <reimplementedby refid="classgr_1_1notchFilter_1_1iirNotch__impl_1ab9b931146953abfb5a2241ea2f70785d">set_wc</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>wc</declname>
+        </param>
+        <briefdescription>
+<para>call back function to update centre frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ht/gr-notchFIlter/include/notchFilter/iirNotch.h" line="39" column="16"/>
+      </memberdef>
+      <memberdef kind="function" id="classgr_1_1notchFilter_1_1iirNotch_1aa170c7b0092310a3c272cac4e69eb434" prot="public" static="no" const="no" explicit="no" inline="no" virt="pure-virtual">
+        <type>void</type>
+        <definition>virtual void gr::notchFilter::iirNotch::set_wb</definition>
+        <argsstring>(double wb)=0</argsstring>
+        <name>set_wb</name>
+        <reimplementedby refid="classgr_1_1notchFilter_1_1iirNotch__impl_1a23be7d8427a7df070e4c0b0a36ced935">set_wb</reimplementedby>
+        <param>
+          <type>double</type>
+          <declname>wb</declname>
+        </param>
+        <briefdescription>
+<para>call back function to update band frequency </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="/home/ht/gr-notchFIlter/include/notchFilter/iirNotch.h" line="44" column="16"/>
+      </memberdef>
+      </sectiondef>
+    <briefdescription>
+<para>&lt;+description of block+&gt; </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>gr::notchFilter::iirNotch</label>
+        <link refid="classgr_1_1notchFilter_1_1iirNotch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::sync_block</label>
+      </node>
+      <node id="3">
+        <label>gr::notchFilter::iirNotch_impl</label>
+        <link refid="classgr_1_1notchFilter_1_1iirNotch__impl"/>
+        <childnode refid="1" relation="public-inheritance">
+        </childnode>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>gr::notchFilter::iirNotch</label>
+        <link refid="classgr_1_1notchFilter_1_1iirNotch"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>gr::sync_block</label>
+      </node>
+    </collaborationgraph>
+    <location file="/home/ht/gr-notchFIlter/include/notchFilter/iirNotch.h" line="22" column="52" bodyfile="/home/ht/gr-notchFIlter/include/notchFilter/iirNotch.h" bodystart="22" bodyend="45"/>
+    <listofallmembers>
+      <member refid="classgr_1_1notchFilter_1_1iirNotch_1a8df8bb20644926560469d99ec47af6fe" prot="public" virt="non-virtual"><scope>gr::notchFilter::iirNotch</scope><name>make</name></member>
+      <member refid="classgr_1_1notchFilter_1_1iirNotch_1aa170c7b0092310a3c272cac4e69eb434" prot="public" virt="pure-virtual"><scope>gr::notchFilter::iirNotch</scope><name>set_wb</name></member>
+      <member refid="classgr_1_1notchFilter_1_1iirNotch_1ae31e7de2846f60303228cdef5d0d0eb4" prot="public" virt="pure-virtual"><scope>gr::notchFilter::iirNotch</scope><name>set_wc</name></member>
+      <member refid="classgr_1_1notchFilter_1_1iirNotch_1aae6ab0d1571c968aafb6866ca57d6129" prot="public" virt="non-virtual"><scope>gr::notchFilter::iirNotch</scope><name>sptr</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>
