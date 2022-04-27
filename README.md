@@ -17,21 +17,21 @@ Enter the folder consisting 'build' folder.
 Open terminal here.
 
 **Enter the 'build' folder:**
-
+```shell
 cd build
-
+```
 **run cmake and make:**
-
+```shell
 cmake ..
 
 make
 
 sudo make install
-
+```
 **link the module to the system:**
-
+```shell
 sudo ldconfig
-
+```
 # Blocks
 
 **adaptiveNotch**
@@ -53,3 +53,13 @@ than update w1 and w2:
 w1=0.01e\*f1
 
 w2=0.01e\*f2
+
+**iirnotch**
+An iir notch filter. transfer function is 
+
+(s\*s+wc\*wc)\(s\*s+wc\*wc+wb\*s)
+
+wc is the target frequency to be filtered
+
+wb is the bandwidth to be filtered
+
